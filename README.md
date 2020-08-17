@@ -3,11 +3,15 @@
 ## Installation
 
 ```
-npm install https://bitbucket.org/nkpgSaberRiders/haceslint
+npm install --save-dev https://bitbucket.org/nkpgSaberRiders/haceslint
 ```
 
 ## Usage
 
+Create a file called **.eslintrc.js** at the project root:
+
 ```javascript
-// No documentation yet.
+module.exports = {
+  extends: 'hac-eslint'
+}
 ```
