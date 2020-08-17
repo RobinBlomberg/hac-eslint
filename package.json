@@ -1,11 +1,17 @@
 {
   "name": "hac-eslint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "HiQ Ace Creative",
-  "peerDependencies": {
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
     "@typescript-eslint/parser": "^3.9.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.7.0",
     "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.7.0"
   }
 }
