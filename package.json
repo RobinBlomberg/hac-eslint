@@ -1,0 +1,8 @@
+{
+  "name": "hac-eslint",
+  "version": "0.1.0",
+  "author": "HiQ Ace Creative",
+  "peerDependencies": {
+    "eslint": ">= 7.6.0"
+  }
+}
