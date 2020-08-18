@@ -10,6 +10,12 @@ module.exports = {
   ],
   overrides: [
     {
+      files: ['**/test/**', '**/tests/**'],
+      rules: {
+        'no-magic-numbers': 'off'
+      }
+    },
+    {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
       plugins: [
