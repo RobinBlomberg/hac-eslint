@@ -225,7 +225,7 @@ module.exports = {
     'lines-around-comment': 'off',
     'lines-between-class-members': 'warn',
     'max-classes-per-file': ['warn', 1],
-    'max-depth': ['warn', 4],
+    'max-depth': 'off',
     'max-len': ['warn', { code: 100 }],
     'max-lines': 'off',
     'max-lines-per-function': 'off',
