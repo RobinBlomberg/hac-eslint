@@ -325,7 +325,7 @@ module.exports = {
     'no-obj-calls': 'warn',
     'no-octal': 'warn',
     'no-octal-escape': 'warn',
-    'no-param-reassign': 'warn',
+    'no-param-reassign': 'off',
     'no-path-concat': 'warn',
     'no-plusplus': 'off',
     'no-process-env': 'off',
