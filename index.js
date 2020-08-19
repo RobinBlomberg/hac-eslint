@@ -238,7 +238,7 @@ module.exports = {
     'new-cap': ['warn', { capIsNew: false, newIsCap: true, properties: true }],
     'new-parens': 'warn',
     'newline-per-chained-call': 'off',
-    'no-alert': 'warn',
+    'no-alert': 'off',
     'no-array-constructor': 'warn',
     'no-async-promise-executor': 'warn',
     'no-await-in-loop': 'warn',
