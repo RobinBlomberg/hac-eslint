@@ -112,7 +112,7 @@ module.exports = {
     'max-lines': 'off',
     'max-lines-per-function': 'off',
     'max-nested-callbacks': 'warn',
-    'max-params': 'warn',
+    'max-params': 'off',
     'max-statements': 'off',
     'max-statements-per-line': ['warn', { max: 1 }],
     'multiline-comment-style': 'off',
