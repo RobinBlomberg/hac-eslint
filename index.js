@@ -438,7 +438,7 @@ module.exports = {
     semi: ['warn', 'never'],
     'semi-spacing': ['warn', { after: true, before: false }],
     'semi-style': ['warn', 'first'],
-    'sort-imports': ['warn', {
+    'sort-imports': ['off', {
       ignoreCase: false,
       ignoreDeclarationSort: false,
       ignoreMemberSort: false,
