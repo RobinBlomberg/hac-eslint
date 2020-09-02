@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-hac-eslint",
-  "version": "0.2.6",
+  "name": "@robinblomberg/eslint-config-hac-eslint",
+  "version": "0.3.0",
   "author": "HiQ Ace Creative",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.9.0",
@@ -10,5 +10,20 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-typescript": "^0.14.0",
     "typescript": "^3.9.7"
-  }
+  },
+  "description": "```\r npm install --save-dev @robinblomberg/hac-eslint\r ```",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobinBlomberg/hac-eslint.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobinBlomberg/hac-eslint/issues"
+  },
+  "homepage": "https://github.com/RobinBlomberg/hac-eslint#readme"
 }

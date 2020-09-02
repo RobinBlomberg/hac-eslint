@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-npm install --save-dev https://bitbucket.org/nkpgSaberRiders/haceslint
+npm install --save-dev @robinblomberg/eslint-config-hac-eslint
 ```
 
 ## Usage
