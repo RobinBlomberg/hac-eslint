@@ -12,6 +12,6 @@ Create a file called **.eslintrc.js** at the project root:
 
 ```javascript
 module.exports = {
-  extends: 'hac-eslint'
+  extends: '@robinblomberg/hac-eslint'
 }
 ```
