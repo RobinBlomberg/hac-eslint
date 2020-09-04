@@ -10,13 +10,22 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['**/test/**', '**/tests/**'],
+      files: [
+        '**/test/**',
+        '**/tests/**',
+        '**/*.test.js',
+        '**/*.test.ts'
+      ],
       rules: {
-        'no-magic-numbers': 'off'
+        'no-magic-numbers': 'off',
+        'sort-keys': 'off'
       }
     },
     {
-      files: ['**/*.ts', '**/*.tsx'],
+      files: [
+        '**/*.ts',
+        '**/*.tsx'
+      ],
       parser: '@typescript-eslint/parser',
       plugins: [
         'typescript',
