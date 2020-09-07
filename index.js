@@ -229,7 +229,7 @@ module.exports = {
     'id-length': 'off',
     'id-match': ['warn', '^_?[_A-Za-z][A-Za-z0-9_]*$'],
     'implicit-arrow-linebreak': ['off', 'beside'],
-    'init-declarations': 'warn',
+    'init-declarations': 'off',
     'jsx-quotes': 'warn',
     'key-spacing': ['warn', { afterColon: true, beforeColon: false }],
     'keyword-spacing': ['warn', { after: true, before: true }],
