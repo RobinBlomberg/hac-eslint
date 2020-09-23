@@ -156,7 +156,7 @@ module.exports = {
         'react/prefer-stateless-function': 'warn',
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'warn',
-        'react/require-default-props': 'warn',
+        'react/require-default-props': 'off',
         'react/require-optimization': 'off',
         'react/require-render-return': 'warn',
         'react/self-closing-comp': 'warn',
