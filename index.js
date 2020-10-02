@@ -234,7 +234,7 @@ module.exports = {
     'key-spacing': ['warn', { afterColon: true, beforeColon: false }],
     'keyword-spacing': ['warn', { after: true, before: true }],
     'line-comment-position': 'off',
-    'linebreak-style': 'unix',
+    'linebreak-style': ['warn', 'unix'],
     'lines-around-comment': 'off',
     'lines-between-class-members': 'warn',
     'max-classes-per-file': ['warn', 1],
