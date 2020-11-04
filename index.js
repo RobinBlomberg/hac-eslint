@@ -47,11 +47,17 @@ module.exports = {
         }],
         '@typescript-eslint/no-explicit-any': 'warn',
         '@typescript-eslint/no-unused-vars': ['warn', { args: 'none' }],
+        '@typescript-eslint/no-use-before-define': ['error', {
+          classes: false,
+          functions: false,
+          variables: false
+        }],
         '@typescript-eslint/no-var-requires': 'off',
         'default-case': 'off',
         indent: 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
+        'no-use-before-define': 'off',
         radix: 'off'
       }
     },
