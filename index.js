@@ -5,8 +5,17 @@ module.exports = {
     es6: true,
     node: true
   },
+  extends: [
+    'plugin:jsx-a11y/recommended'
+  ],
   ignorePatterns: [
-    '**/dist/**/*.js'
+    '**/dist/**/*.js',
+    '**/node_modules/**',
+    '**/public/**',
+    '**/*.min.*'
+  ],
+  plugins: [
+    'jsx-a11y'
   ],
   overrides: [
     {
@@ -16,6 +25,11 @@ module.exports = {
         '**/*.test.js',
         '**/*.test.ts'
       ],
+      // Jest globals quick-fix:
+      globals: {
+        expect: true,
+        test: true
+      },
       rules: {
         'no-magic-numbers': 'off',
         'sort-keys': 'off'
@@ -76,7 +90,7 @@ module.exports = {
         'react/boolean-prop-naming': 'warn',
         'react/button-has-type': 'warn',
         'react/default-props-match-prop-types': 'warn',
-        'react/destructuring-assignment': 'warn',
+        'react/destructuring-assignment': 'off',
         'react/display-name': 'warn',
         'react/forbid-component-props': 'off',
         'react/forbid-dom-props': 'warn',
@@ -98,7 +112,7 @@ module.exports = {
         'react/jsx-curly-newline': 'off',
         'react/jsx-curly-spacing': 'warn',
         'react/jsx-equals-spacing': 'warn',
-        'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
+        'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
         'react/jsx-first-prop-new-line': 'warn',
         'react/jsx-fragments': 'warn',
         'react/jsx-handler-names': 'warn',
@@ -165,7 +179,7 @@ module.exports = {
         'react/no-will-update-set-state': 'warn',
         'react/prefer-es6-class': 'warn',
         'react/prefer-read-only-props': 'warn',
-        'react/prefer-stateless-function': 'warn',
+        'react/prefer-stateless-function': 'off',
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'warn',
         'react/require-default-props': 'off',
@@ -248,7 +262,7 @@ module.exports = {
     'line-comment-position': 'off',
     'linebreak-style': ['warn', 'unix'],
     'lines-around-comment': 'off',
-    'lines-between-class-members': 'warn',
+    'lines-between-class-members': ['warn', 'always', { exceptAfterSingleLine: true }],
     'max-classes-per-file': ['warn', 1],
     'max-depth': 'off',
     'max-len': ['warn', { code: 100 }],
