@@ -23,9 +23,10 @@ module.exports = {
         '**/test/**',
         '**/tests/**',
         '**/*.test.js',
-        '**/*.test.ts'
+        '**/*.test.jsx',
+        '**/*.test.ts',
+        '**/*.test.tsx'
       ],
-      // Jest globals quick-fix:
       globals: {
         expect: true,
         test: true
