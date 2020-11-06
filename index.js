@@ -47,7 +47,16 @@ module.exports = {
         '@typescript-eslint'
       ],
       rules: {
-        '@typescript-eslint/ban-types': 'warn',
+        '@typescript-eslint/ban-types': [
+          'warn',
+          {
+            extendDefaults: true,
+            types: {
+              '{}': false,
+              Function: false
+            }
+          }
+        ],
         '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/indent': ['warn', 2],
         '@typescript-eslint/member-delimiter-style': ['warn', {
