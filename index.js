@@ -58,7 +58,13 @@ module.exports = {
           }
         ],
         '@typescript-eslint/camelcase': 'off',
-        '@typescript-eslint/indent': ['warn', 2],
+        '@typescript-eslint/indent': ['warn', 2, {
+          SwitchCase: 1,
+          ignoredNodes: [
+            'TSIntersectionType',
+            'TSTypeParameterInstantiation'
+          ]
+        }],
         '@typescript-eslint/member-delimiter-style': ['warn', {
           multiline: {
             delimiter: 'none',
@@ -265,6 +271,7 @@ module.exports = {
     'id-length': 'off',
     'id-match': ['warn', '^_?[_A-Za-z][A-Za-z0-9_]*$'],
     'implicit-arrow-linebreak': ['off', 'beside'],
+    'indent': ['warn', 2, { SwitchCase: 1 }],
     'init-declarations': 'off',
     'jsx-quotes': 'warn',
     'key-spacing': ['warn', { afterColon: true, beforeColon: false }],

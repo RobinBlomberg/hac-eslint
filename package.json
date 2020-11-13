@@ -1,6 +1,6 @@
 {
   "name": "@robinblomberg/eslint-config-hac-eslint",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "author": "HiQ Ace Creative",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.6.1",
