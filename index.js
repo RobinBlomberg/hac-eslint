@@ -470,7 +470,7 @@ module.exports = {
     'padding-line-between-statements': 'warn',
     'prefer-arrow-callback': 'warn',
     'prefer-const': ['warn', { destructuring: 'all' }],
-    'prefer-destructuring': ['warn', { array: false, object: true }],
+    'prefer-destructuring': ['off', { array: false, object: true }],
     'prefer-named-capture-group': 'off',
     'prefer-numeric-literals': 'warn',
     'prefer-object-spread': 'warn',
