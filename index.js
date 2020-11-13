@@ -202,7 +202,46 @@ module.exports = {
         'react/require-optimization': 'off',
         'react/require-render-return': 'warn',
         'react/self-closing-comp': 'warn',
-        'react/sort-comp': 'warn',
+        'react/sort-comp': ['warn', {
+          groups: {
+            lifecycle: [
+              'displayName',
+              'propTypes',
+              'contextTypes',
+              'childContextTypes',
+              'mixins',
+              'statics',
+              'defaultProps',
+              'constructor',
+              'getDefaultProps',
+              'state',
+              'getInitialState',
+              'getChildContext',
+              'getDerivedStateFromProps',
+              'componentWillMount',
+              'UNSAFE_componentWillMount',
+              'componentDidMount',
+              'componentWillReceiveProps',
+              'UNSAFE_componentWillReceiveProps',
+              'shouldComponentUpdate',
+              'componentWillUpdate',
+              'UNSAFE_componentWillUpdate',
+              'getSnapshotBeforeUpdate',
+              'componentDidUpdate',
+              'componentDidCatch',
+              'componentWillUnmount'
+            ]
+          },
+          order: [
+            'static-variables',
+            'static-methods',
+            'everything-else',
+            'instance-variables',
+            'instance-methods',
+            'lifecycle',
+            'render'
+          ]
+        }],
         'react/sort-prop-types': 'warn',
         'react/state-in-constructor': ['warn', 'never'],
         'react/static-property-placement': 'warn',
