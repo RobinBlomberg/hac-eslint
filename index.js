@@ -202,7 +202,7 @@ module.exports = {
         'react/require-optimization': 'off',
         'react/require-render-return': 'warn',
         'react/self-closing-comp': 'warn',
-        'react/sort-comp': ['warn', {
+        'react/sort-comp': ['off', {
           groups: {
             lifecycle: [
               'displayName',
