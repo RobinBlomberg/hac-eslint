@@ -321,7 +321,11 @@ module.exports = {
     'lines-between-class-members': ['warn', 'always', { exceptAfterSingleLine: true }],
     'max-classes-per-file': ['warn', 1],
     'max-depth': 'off',
-    'max-len': ['warn', { code: 100 }],
+    'max-len': ['warn', {
+      code: 100,
+      ignoreComments: true,
+      ignoreRegExpLiterals: true
+    }],
     'max-lines': 'off',
     'max-lines-per-function': 'off',
     'max-nested-callbacks': 'warn',
