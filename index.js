@@ -279,7 +279,7 @@ module.exports = {
     'callback-return': ['warn', ['callback', 'cb', 'next']],
     camelcase: ['off', { properties: 'never' }],
     'capitalized-comments': 'off',
-    'class-methods-use-this': 'warn',
+    'class-methods-use-this': 'off',
     'comma-dangle': ['warn', 'never'],
     'comma-spacing': ['warn', { after: true, before: false }],
     'comma-style': ['warn', 'last'],
