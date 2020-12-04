@@ -243,7 +243,7 @@ module.exports = {
           ]
         }],
         'react/sort-prop-types': 'warn',
-        'react/state-in-constructor': ['warn', 'never'],
+        'react/state-in-constructor': 'off',
         'react/static-property-placement': 'warn',
         'react/style-prop-object': 'warn',
         'react/void-dom-elements-no-children': 'warn',
