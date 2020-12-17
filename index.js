@@ -52,8 +52,8 @@ module.exports = {
           {
             extendDefaults: true,
             types: {
-              '{}': false,
-              Function: false
+              '{}': null,
+              Function: null
             }
           }
         ],
