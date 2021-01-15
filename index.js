@@ -81,6 +81,12 @@ module.exports = {
           }
         }],
         '@typescript-eslint/no-explicit-any': warn,
+        '@typescript-eslint/no-magic-numbers': [warn, {
+          ignore: [-1, 0, 1, 2],
+          ignoreEnums: true,
+          ignoreNumericLiteralTypes: true,
+          ignoreReadonlyClassProperties: true
+        }],
         '@typescript-eslint/no-shadow': warn,
         '@typescript-eslint/no-unused-vars': [warn, { args: 'none' }],
         '@typescript-eslint/no-use-before-define': [error, {
@@ -91,6 +97,7 @@ module.exports = {
         '@typescript-eslint/no-var-requires': off,
         'default-case': off,
         indent: off,
+        'no-magic-numbers': off,
         'no-shadow': off,
         /**
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
