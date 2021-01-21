@@ -24,6 +24,9 @@ module.exports = {
   ],
   overrides: [
     {
+      env: {
+        mocha: true
+      },
       files: [
         '**/test/**',
         '**/tests/**',
@@ -32,10 +35,6 @@ module.exports = {
         '**/*.test.ts',
         '**/*.test.tsx'
       ],
-      globals: {
-        expect: true,
-        test: true
-      },
       rules: {
         '@typescript-eslint/no-magic-numbers': off,
         'no-magic-numbers': off,
