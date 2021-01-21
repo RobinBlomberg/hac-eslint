@@ -37,6 +37,7 @@ module.exports = {
         test: true
       },
       rules: {
+        '@typescript-eslint/no-magic-numbers': off,
         'no-magic-numbers': off,
         'sort-keys': off
       }
