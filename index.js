@@ -24,24 +24,6 @@ module.exports = {
   ],
   overrides: [
     {
-      env: {
-        mocha: true
-      },
-      files: [
-        '**/test/**',
-        '**/tests/**',
-        '**/*.test.js',
-        '**/*.test.jsx',
-        '**/*.test.ts',
-        '**/*.test.tsx'
-      ],
-      rules: {
-        '@typescript-eslint/no-magic-numbers': off,
-        'no-magic-numbers': off,
-        'sort-keys': off
-      }
-    },
-    {
       files: [
         '**/*.ts',
         '**/*.tsx'
@@ -264,6 +246,24 @@ module.exports = {
         react: {
           version: '16.13.1'
         }
+      }
+    },
+    {
+      env: {
+        mocha: true
+      },
+      files: [
+        '**/test/**',
+        '**/tests/**',
+        '**/*.test.js',
+        '**/*.test.jsx',
+        '**/*.test.ts',
+        '**/*.test.tsx'
+      ],
+      rules: {
+        '@typescript-eslint/no-magic-numbers': off,
+        'no-magic-numbers': off,
+        'sort-keys': off
       }
     }
   ],
