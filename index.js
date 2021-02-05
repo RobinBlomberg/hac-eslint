@@ -533,7 +533,7 @@ module.exports = {
     'prefer-regex-literals': warn,
     'prefer-rest-params': warn,
     'prefer-spread': warn,
-    'prefer-template': warn,
+    'prefer-template': off,
     'quote-props': [warn, 'as-needed'],
     quotes: [warn, 'single', {
       allowTemplateLiterals: false,
