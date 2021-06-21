@@ -69,7 +69,19 @@ module.exports = {
           },
         ],
         '@typescript-eslint/no-shadow': warn,
-        '@typescript-eslint/no-unused-vars': [warn, { args: 'none' }],
+        '@typescript-eslint/no-undef': error,
+        '@typescript-eslint/no-unused-expressions': [
+          warn,
+          {
+            allowShortCircuit: true,
+            allowTaggedTemplates: true,
+            allowTernary: true,
+          },
+        ],
+        '@typescript-eslint/no-unused-vars': [
+          warn,
+          { args: 'none', vars: 'all' },
+        ],
         '@typescript-eslint/no-use-before-define': [
           error,
           {
@@ -87,6 +99,7 @@ module.exports = {
          * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
          */
         'no-undef': off,
+        'no-unused-expressions': off,
         'no-unused-vars': off,
         'no-use-before-define': off,
         radix: off,
@@ -517,7 +530,7 @@ module.exports = {
       },
     ],
     'no-unused-labels': warn,
-    'no-unused-vars': [warn, { vars: 'all' }],
+    'no-unused-vars': [warn, { args: 'none', vars: 'all' }],
     'no-use-before-define': [
       error,
       {
