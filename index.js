@@ -69,7 +69,6 @@ module.exports = {
           },
         ],
         '@typescript-eslint/no-shadow': warn,
-        '@typescript-eslint/no-undef': error,
         '@typescript-eslint/no-unused-expressions': [
           warn,
           {
