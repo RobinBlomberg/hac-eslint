@@ -58,6 +58,7 @@ module.exports = {
             },
           },
         ],
+        '@typescript-eslint/no-empty-function': warn,
         '@typescript-eslint/no-explicit-any': warn,
         '@typescript-eslint/no-magic-numbers': [
           warn,
@@ -93,6 +94,7 @@ module.exports = {
         '@typescript-eslint/no-var-requires': off,
         'default-case': off,
         indent: off,
+        'no-empty-function': off,
         'no-magic-numbers': off,
         'no-shadow': off,
         /**
